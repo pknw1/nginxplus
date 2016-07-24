@@ -24,7 +24,8 @@ RUN printf "deb https://plus-pkgs.nginx.com/ubuntu `lsb_release -cs` nginx-plus\
 
 
 RUN wget https://cs.nginx.com/static/install-nginx && sudo chmod +x install-nginx
-RUN sudo ./install-nginx 1dc79cf0487523f551e6a65ca569fcae
+RUN sudo ./install-nginx 1041ac5350ec954a9dee481285452cd3
+
             
 # forward request logs to Docker log collector
 RUN ln -sf /dev/stdout /var/log/nginx/access.log
